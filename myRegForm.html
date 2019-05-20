@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Registration Form</title>
+        <meta name="Registration" content="A form for all your registration needs!">        
+    </head>
+    <body>
+        <form action="/submission_page.rb" method="get">
+            <h1>My Registration Form</h1>
+                
+            <!--first_name-->
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name">
+            <br/>
+        
+            <!--last_name-->
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name">
+            <br/>
+        
+            <!--email-->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <br/>
+        
+            <!--password-->
+            <label for="passowrd">Passoword:</label>
+            <input type="password" id="passowrd" name="passowrd">
+            <br/>
+        
+            <!--password confirmation-->
+            <label for="pw_confirm">PW Confirm:</label>
+            <input type="password" id="pw_confirm" name="pwConfirm">
+            <br/>
+        
+            <!--birthdate-->
+            <!--Please note that this should be updated using polyfill if site is updated to include JavaScript-->
+            <label for="birthdate">Birthday:</label>
+            <input type="date" id="birthdate" name="birthdate">
+            <br/>
+        
+            <!--gender radio-->
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+            <br/>
+        
+            <!--about self textarea-->
+            <p>A short description about yourself:</p>
+            <textarea name="self_description"></textarea>
+            <br/>
+        
+            <!--favorite language drop-down-->
+            <label>Favorite Language:</label>
+            <select name="fav_language">
+                <option value="JavaScript">JavaScript</option>
+                <option value="Ruby">Ruby</option>
+                <option value="Python">Python</option>
+                <option value="C#">C#</option>
+                <option value="Java">Java</option>
+            </select>
+                
+            <!--submit button-->
+            <br/>
+            <input type="submit" value="submit">
+        </form>
+    </body>
+</html>
